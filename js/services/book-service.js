@@ -25,7 +25,7 @@ export const bookService = {
 function saveBooks() {
   let ranBooks = utilService.loadFromStorage('Searches')
   if(!ranBooks||!ranBooks.length){
-    console.log('what')
+    utilService.saveToStorage(gSearches)
   }else return
 }
 
